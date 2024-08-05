@@ -8,17 +8,14 @@ Vue.component("purple_background_cta_component_1722890063", {
         <div id="section-container" class="max-w-6xl mx-auto px-4 sm:px-6 bg-white">
             <div id="content-container" class="relative px-8 py-12 md:py-20 rounded-[3rem] overflow-hidden">
                 <!-- Radial gradient -->
-                <div id="radial-gradient" class="absolute flex items-center justify-center top-0 -translate-y-1/2 left-1/2 -translate-x-1/2 pointer-events-none -z-10 w-1/3 aspect-square" aria-hidden="true">
-                    <div id="radial-gradient-outer" class="absolute inset-0 translate-z-0 rounded-full blur-[120px] opacity-70" :class="radialGradientPrimaryStyle"></div>
-                    <div id="radial-gradient-inner" class="absolute w-1/4 h-1/4 translate-z-0 rounded-full blur-[40px]" :class="radialGradientSecondaryStyle">
-                    </div>
+                <!-- Toilet Paper Background -->
+                <div id="toilet-paper-background" class="absolute inset-0 pointer-events-none -z-10" aria-hidden="true">
+                    <div class="w-full h-full bg-repeat" style="background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCIgdmlld0JveD0iMCAwIDQwIDQwIj48cGF0aCBkPSJNMCAwaDQwdjQwSDBWMHptMjAgMjBjMC0yLjc2LTIuMjQtNS01LTVzLTUgMi4yNC01IDUgMi4yNCA1IDUgNSA1LTIuMjQgNS01eiIgZmlsbC1vcGFjaXR5PSIuMSIvPjwvc3ZnPg==');"></div>
                 </div>
-                <!-- Blurred shape -->
-                <div id="blurred-shape" class="absolute bottom-0 translate-y-1/2 left-0 blur-2xl opacity-50 pointer-events-none -z-10" aria-hidden="true">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="434" height="427">
-                        <defs><linearGradient id="bs5-a" x1="19.609%" x2="50%" y1="14.544%" y2="100%"><stop offset="0%" :stop-color="stopColorPrimaryStyle" /><stop offset="100%" :stop-color="stopColorSecondaryStyle" stop-opacity="0" /></linearGradient></defs>
-                        <path fill="url(#bs5-a)" fill-rule="evenodd" d="m0 0 461 369-284 58z" transform="matrix(1 0 0 -1 0 427)" />
-                    </svg>
+                <!-- Toilet Paper Roll -->
+                <div id="toilet-paper-roll" class="absolute bottom-0 right-0 w-40 h-40 bg-white rounded-full shadow-lg" aria-hidden="true">
+                    <div class="absolute inset-4 bg-gray-100 rounded-full"></div>
+                    <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-4 h-4 bg-gray-300 rounded-full"></div>
                 </div>
                 <!-- Content -->
                 <div id="content" class="max-w-3xl mx-auto text-center">
@@ -34,18 +31,18 @@ Vue.component("purple_background_cta_component_1722890063", {
             return {
                 expanded: false, 
                 tab: null,
-                radialGradientPrimaryStyle: "bg-purple-500",
-                radialGradientSecondaryStyle: "bg-purple-400",
-                stopColorPrimaryStyle: "#A855F7",
-                stopColorSecondaryStyle: "#6366F1",
+                radialGradientPrimaryStyle: "bg-gray-200",
+                radialGradientSecondaryStyle: "bg-white",
+                stopColorPrimaryStyle: "#E5E7EB",
+                stopColorSecondaryStyle: "#FFFFFF",
                 transparentTextStyle: "text-transparent",
-                contentSubtitleStyle: "bg-gradient-to-r from-purple-500 to-purple-200",
-                contentCtaTitleStyle: "bg-gradient-to-r from-slate-200/60 via-slate-200 to-slate-200/60",
-                contentBodyStyle: "text-slate-400",
-                contentCtaButtonPrimaryStyle:"text-slate-900",
-                contentCtaButtonGradientStyle: "bg-gradient-to-r from-white/80 via-white to-white/80",
-                contentCtaButtonHoverStyle: "hover:bg-white",
-                contentCtaArrowStyle: "text-purple-500"
+                contentSubtitleStyle: "bg-gradient-to-r from-gray-600 to-gray-400",
+                contentCtaTitleStyle: "bg-gradient-to-r from-gray-800 via-gray-700 to-gray-800",
+                contentBodyStyle: "text-gray-600",
+                contentCtaButtonPrimaryStyle:"text-white",
+                contentCtaButtonGradientStyle: "bg-gradient-to-r from-gray-600 via-gray-500 to-gray-600",
+                contentCtaButtonHoverStyle: "hover:bg-gray-500",
+                contentCtaArrowStyle: "text-white"
             };
         },
     });
