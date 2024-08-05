@@ -18,5 +18,11 @@
         "content": "Got it, working on changing the background to toilet paper.",
         "timestamp": "05082024203754",
         "message_id": "guest05082024203753"
+    },
+    {
+        "role": "chat_qna",
+        "content": "{\"status\": \"success\", \"qna\": [{\"question 1\": \"Do you prefer a realistic or illustrated toilet paper theme for the background?\", \"option1\": \"Realistic\", \"option2\": \"Illustrated\"}, {\"question 2\": \"Should the theme be more playful or professional?\", \"option1\": \"Playful\", \"option2\": \"Professional\"}], \"input_token_count\": 259, \"output_token_count\": 74, \"time_taken\": \"0:00:03.209874\"}",
+        "timestamp": "05082024203758",
+        "message_id": "guest05082024203753"
     }
 ]
