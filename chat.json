@@ -1,5 +1,14 @@
 [
     {
+        "role": "chat_acknowledge",
+        "content": "Got it, working on changing the background to toilet paper.",
+        "message_id": "guest05082024203753",
+        "timestamp": "05082024203754",
+        "component_file_name": "",
+        "div_id": "",
+        "div_action": ""
+    },
+    {
         "role": "user",
         "content": "change the background to be toilet paper themed",
         "message_id": "guest05082024203753",
